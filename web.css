@@ -1,0 +1,40 @@
+ ul.d
+{
+   list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+ li.c
+ {
+ float:left;
+
+
+ }
+ a:link,a:visited
+ {
+     display: block;
+     width: 90px;
+     font-weight: bold;
+     text-align: center;
+     padding: 3px;
+     margin:2px;
+     text-transform: uppercase;
+      margin-bottom: 15px;
+
+
+ }
+
+ .b
+ {
+     float:right;
+
+ }
+ input[type='checkbox']
+ {
+     margin-left:40px;
+ }
+ caption
+ {
+        caption-side: bottom;
+ }
