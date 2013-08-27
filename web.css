@@ -11,7 +11,7 @@
 
 
  }
- a:link,a:visited
+ a:link.m,a:visited
  {
      display: block;
      width: 90px;
@@ -21,6 +21,7 @@
      margin:2px;
      text-transform: uppercase;
       margin-bottom: 15px;
+     text-decoration: none;
 
 
  }
@@ -32,9 +33,17 @@
  }
  input[type='checkbox']
  {
-     margin-left:40px;
+     margin-left:47px;
  }
  caption
  {
         caption-side: bottom;
+ }
+ .n
+ {
+   margin-left:102px ;
+ }
+ .nn
+ {
+     margin-left:8px ;
  }
