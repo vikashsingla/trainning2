@@ -1,14 +1,48 @@
-var c=document.getElementById("v");
-var ctx=c.getContext("2d");
-var grd=ctx.createRadialGradient(100,70,10,150,80,100);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"green");
-ctx.fillStyle=grd;
-ctx.fillRect(20,20,200,250);
+function onlodecanvas()
+{
 
-
-
+    var c=document.getElementById("v");
+    var ctx=c.getContext("2d");
+    var grd=ctx.createRadialGradient(100,70,10,150,80,100);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"green");
+    ctx.fillStyle=grd;
+    ctx.fillRect(20,20,200,250);
+}
 var txt="";
+onlodecanvas();
+
+
+function demo()
+{
+    var person =
+      {
+        firstname:"john",
+        lastname:"doe",
+        id:"4545"
+      };
+    var person = person.lastname + "<br><br>";
+    var y=5;
+    var z=y+4;
+    var x="code name :"+ navigator.appCodeName + "<br><br>" ;
+    var i;
+    var mycars=new Array();
+    mycars[0]="saab";
+    mycars[1]="volvo";
+    mycars[2]="BMW";
+
+     var a="";
+    for(i=0;i<mycars.length;i++)
+     {
+       a= a+mycars[i]+"<br><br>";
+     }
+
+     var demoP=document.getElementById('demo')
+    demoP.innerHTML=a + x + person + "s=" + z ;
+}
+
+
+
 function message()
 {
     try
@@ -32,6 +66,8 @@ function myfunction(name)
 {
     alert("welcome" +name+"" );
 }
+
+
 function v()
 {
     var x=5+5;
@@ -42,13 +78,15 @@ function v()
     var demop=document.getElementById("demo");
     demop.innerHTML=x+"<br>"+y+"<br>"+z;
 }
+
+
 function my()
 {
     var x="";
     var time=new Date().getHours();
 
 
-   if(time<14)
+   if(time<20)
    {
        x="Good Day" ;
 
@@ -59,6 +97,8 @@ function my()
    }
     document.getElementById("demo").innerHTML=x;
 }
+
+
 function vv()
 {
    var x="",i=0;
@@ -67,6 +107,16 @@ function vv()
         x=x + "this no. is" + i + "<br>";
         i++;
     }
-    document.getElementById("demo").innerHTML=x;
+    document.getElementById("demo2").innerHTML=x;
 }
+
+
+
+
+
+
+
+
+
+
 
