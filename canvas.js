@@ -109,6 +109,18 @@ function vv()
     }
     document.getElementById("demo2").innerHTML=x;
 }
+function draw(direction)
+{
+    var c=document.getElementById("mycanvas");
+    var ctx= c.getContext("2d");
+    ctx.clearRect(0,0, c.width, c.height) ;
+    var img=document.getElementById("tree")
+    img.innerHTML=c;
+    var pat=ctx.createPattern(img,direction);
+    ctx.rect(0,0,200,150);
+    ctx.fillStyle=pat;
+    ctx.fill();
+}
 
 
 

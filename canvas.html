@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+      <link href="/home/manusis/Downloads/trainning2/canvas.html" rel="stylesheet" media="screen">
 </head>
 <body>
-<canvas id="v" width="300px" height="200px"></canvas>
+<canvas id="v" width="300px" height="200px">
+</canvas>
+<p><h1>image used</h1></p><br>
+<img class="a" src="file:///home/manusis/Pictures/images1.jpg"
+     id="tree" width="200px" height="350px"> <br>
+<button onclick="draw('repeat')">Repeat</button>
+<p id="mycanvas"></p>
+<button onclick="draw('repeat-x')">Repeat-x</button>
+<button onclick="draw('repeat-y')">Repeat-y</button>
+<button onclick="draw('no-repeat')">No-Repeat</button><br>
+<canvas id="mycanvas" width="300px" height="350px" style="border: 2px solid red"></canvas> <br>
+
+
 <script src="canvas.js"></script>
 <audio controls>
     <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
     <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
-</audio>
+</audio> <br>
 <figure>
     <img src="file:///home/manusis/Pictures/Art-Gallery3.jpg"  width="300px" height="300px">
     <figcaption>Beautifull Gallry Image.</figcaption>
