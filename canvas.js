@@ -115,9 +115,9 @@ function draw(direction)
     var ctx= c.getContext("2d");
     ctx.clearRect(0,0, c.width, c.height) ;
     var img=document.getElementById("tree")
-    img.innerHTML=c;
+
     var pat=ctx.createPattern(img,direction);
-    ctx.rect(0,0,200,150);
+    ctx.rect(0,0,300,250);
     ctx.fillStyle=pat;
     ctx.fill();
 }
