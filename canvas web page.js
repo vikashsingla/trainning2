@@ -22,6 +22,10 @@ function shadow()
     ctx.fillStyle="red";
     ctx.fillRect(20,20,100,100);
 
+
+
+
+
     var c=document.getElementById("myCanvas2");
     var ctx= c.getContext("2d");
     ctx.shadowBlur=10;

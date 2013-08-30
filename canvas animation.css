@@ -1,0 +1,59 @@
+.div
+{
+width: 100px;
+height:100px;
+background-color: green;
+position: relative;
+animation: mymove 10s infinite;
+}
+@-moz-keyframes mymove
+{
+    from{top:0px;}
+    to   {top:200px;}
+}
+
+
+.left
+{
+    width: 100px;
+    height:100px;
+    background-color: yellow;
+    position: relative;
+    animation: my 10s infinite;
+}
+@-moz-keyframes my
+{
+    from{left: 0px;}
+    to{left: 500px;}
+}
+
+.right
+{
+    margin-left: 500px;
+    width: 100px;
+    height:100px;
+    background-color: red;
+    position: relative;
+    animation: m 10s infinite;
+}
+@-moz-keyframes m
+{
+    from{right: 0px;}
+    to{right: 500px;}
+}
+
+
+.bottom
+{
+    margin-left: 500px;
+    width: 100px;
+    height:100px;
+    background-color: blue;
+    position: relative;
+    animation: y 10s infinite;
+}
+@-moz-keyframes y
+{
+    from{bottom: 0px;}
+    to{bottom: 200px;}
+}
