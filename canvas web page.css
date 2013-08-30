@@ -1,7 +1,18 @@
 .a
 {
-    margin: 200px;
-    margin-left: 400px;
+    margin: -199px;
+    margin-left: 401px;
     padding: 0px;
     background-color: white;
+}
+.b
+{
+    margin: 200px;
+    margin-left: 400px;
+
+
+}
+.img
+{
+    margin-top: -200px;
 }
