@@ -24,8 +24,6 @@ function shadow()
 
 
 
-
-
     var c=document.getElementById("myCanvas2");
     var ctx= c.getContext("2d");
     ctx.shadowBlur=10;
@@ -55,8 +53,5 @@ function shadow()
     gradient.addColorStop("1.0","red");
     ctx.strokeStyle=gradient;
     ctx.strokeText("Helo Canvas",10,50);
-
-
-
 
 }

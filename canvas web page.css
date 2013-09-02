@@ -1,7 +1,7 @@
 .a
 {
     margin: -199px;
-    margin-left: 401px;
+    margin-left: 400px;
     padding: 0px;
     background-color: white;
 }
@@ -14,5 +14,26 @@
 }
 .img
 {
-    margin-top: -200px;
+    margin-top: -320px;
+}
+.z
+{
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    border-style: outset;
+    border-bottom-color: red;
+}
+.body
+{
+    background-color: white;
+    border: red;
+    cursor: crosshair;
+}
+
+
+.mycanvas
+{
+    background-color:greenyellow;
+    border: thick solid red;
 }

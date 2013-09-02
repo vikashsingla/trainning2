@@ -57,3 +57,20 @@ animation: mymove 10s infinite;
     from{bottom: 0px;}
     to{bottom: 200px;}
 }
+
+.select
+{
+    margin-left: 250px;
+    width: 100px;
+    height:100px;
+    background-color: deeppink;
+    position: relative;
+    animation: mymove2 10s infinite;
+}
+@-moz-keyframes mymove2
+{
+   0% {bottom: 0px;}
+   25%  {bottom: 500px;}
+   75%  {bottom: 50px;}
+  100%  {bottom: 150px;}
+}
