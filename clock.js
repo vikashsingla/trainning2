@@ -10,7 +10,9 @@ font = 35;
 function createcircle()
 {
     context.beginPath();
-    context.arc(canvas.width / 2, canvas.height / 2, true);
+    context.arc(canvas.width / 2, canvas.height / 2,Math.PI * 2, true);
+
+    context.strokeStyle="lime";
     context.stroke();
 }
 function createnos()
@@ -23,6 +25,7 @@ function createnos()
         angle = Math.PI / 6 * (numeral - 3);
         nowidth = context.measureText(numeral).width;
         context.fillText(numeral,canvas.width / 2 + Math.cos(angle) * (Hr) -nowidth / 2,canvas.height / 2 + Math.sin(angle) * (Hr) + font / 3);
+
     });
 
 }
@@ -30,6 +33,7 @@ function createcenter()
 {
     context.beginPath();
     context.arc(canvas.width / 2, canvas.height / 2, 15, 0, Math.PI * 2, true);
+    context.fillStyle="lime";
     context.fill();
 }
 function createhand(loc, isHour)
