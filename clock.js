@@ -41,20 +41,23 @@ function createhand(loc, isHour)
     var angle = (Math.PI * 2) * (loc / 60) - Math.PI / 2, handRadius = isHour ? r - x - Hx : r - x;
     context.moveTo(canvas.width / 2, canvas.height / 2);
     context.lineTo(canvas.width / 2 + Math.cos(angle) * handRadius, canvas.height / 2 + Math.sin(angle) * handRadius);
+    context.lineWidth="5";
+    context.strokeStyle="deeppink";
     context.stroke();
 }
 function createhands()
 {
     var date = new Date;
-        hour = date.getHours();
+     hour = date.getHours();
     hour = hour > 12 ? hour - 12 : hour;
     createhand(hour * 5 + (date.getMinutes() / 60) * 5, true, 0.5);
     createhand(date.getMinutes(), false, 0.5);
     createhand(date.getSeconds(), false, 0.2);
+
 }
 function createclock()
-{
-    context.clearRect(0, 0, canvas.width, canvas.height);
+{     context.clearRect();
+//    context.clearRect(0, 0, canvas.width, canvas.height);
     createcircle();
     createcenter();
     createhands();
