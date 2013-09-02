@@ -25,6 +25,7 @@ function createnos()
         angle = Math.PI / 6 * (numeral - 3);
         nowidth = context.measureText(numeral).width;
         context.fillText(numeral,canvas.width / 2 + Math.cos(angle) * (Hr) -nowidth / 2,canvas.height / 2 + Math.sin(angle) * (Hr) + font / 3);
+         context.fillText("Menusis" ,200,200);
 
     });
 
@@ -43,6 +44,9 @@ function createhand(loc, isHour)
     context.lineTo(canvas.width / 2 + Math.cos(angle) * handRadius, canvas.height / 2 + Math.sin(angle) * handRadius);
     context.lineWidth="5";
     context.strokeStyle="deeppink";
+
+
+
     context.stroke();
 }
 function createhands()
@@ -56,13 +60,15 @@ function createhands()
 
 }
 function createclock()
-{     context.clearRect();
+{
+    context.clearRect();
 //    context.clearRect(0, 0, canvas.width, canvas.height);
     createcircle();
     createcenter();
     createhands();
     createnos();
 }
+
 context.font = font + 'px Arial';
 loop = setInterval(createclock, 1000);
 
