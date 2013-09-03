@@ -61,8 +61,8 @@ function createhands()
 }
 function createclock()
 {
-    context.clearRect();
-//    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
     createcircle();
     createcenter();
     createhands();
